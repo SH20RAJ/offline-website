@@ -49,7 +49,7 @@ function saveTasks() {
 
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('./service-worker.js')
         .then(reg => {
             console.log('Service Worker registered');
         })
